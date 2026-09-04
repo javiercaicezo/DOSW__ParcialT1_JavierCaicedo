@@ -50,6 +50,7 @@ definirá más adelante.
 | **Precondiciones** | 1. Para que el sistema cumpla con este requerimiento, TutoECI debe tener previamente un autenticado al usuario con credenciales válidas (nombre de usuario y contraseña). |
 | **Actor** | Estudiante |
 | **Flujo principal** | 1. El Estudiante inicia sesión en el sistema con sus credenciales.<br>2. El etudiante selecciona la opción de solicitar tutorias.<br>3. El sistema valida si el usuario tiene acceso a la materia consultada(en este caso se da acceso)<br>4. El estudiante elige la opcion de filtrado de solicitud deseada(FASTEST_AVAILABLE / EXPERT_FIRST / PEER_TUTORING).<br>5. El sistema solicita los datos necesarios según la acción (fechas, tutor, prioridad, etc).<br>6. El sistema ejecuta la acción y realiza la reserva de acuerdo a la opcion escogida. |
+| **Diagrama de caso de uso** | ![Diagrama de caso de uso - SOlicitud con requerimientos](../uml/RF3-CU.png) |
 | **Poscondiciones** | Se espera como resultado que quede debidamente reservado en la base de datos la franja horaria correspondiente a la materia y al tutor. |
 | **Historia de usuario** | COMO estudiante QUIERO solicitar de diferentes maneras la opción de tutoria dependiendo de mis prioridades y requerimientos PARA PODER tener una mejor tutoria frente a mis necesidades en la materia solicitada. |
 
