@@ -1,12 +1,12 @@
 # DOSW__ParcialT1_JavierCaicedo
 Examen 1 - 04/09/26
 
-### 1. Diagrama de contexto:
+# 1. Diagrama de contexto:
 Construya el Diagrama de Contexto C4 del sistema. 
 
 ![Diagrama de contexto C4](../docs/images/context.png)
 
-### 2. Requerimientos 
+# 2. Requerimientos 
 Identifique 5 requerimientos del sistema y clasifíquelos en funcionales (3) y no funcionales (2). Garantice que al menos un requerimiento funcional utilice un patrón de diseño que 
 definirá más adelante.
 
@@ -59,3 +59,18 @@ definirá más adelante.
   - La pagina debe respetar la identidad institucional incluyento la paleta de colores oficial del programa
   - Se debe emplear una tipografia clara con unos estandares minimos al contraste
 
+
+# 3. Jira - Planeación Agile 
+Seleccione el requerimiento principal (Recomendación de Tutor) y realice la 
+descomposición. En Jira registre: 
+• 1 Épica. 
+• La Historia de Usuario obligatoria. 
+• Mínimo 3 tareas técnicas (ej. refactorización, lógica de selección, conexión a 
+sistemas externos). 
+
+Link de JIRA: https://mail-team-auscl79v.atlassian.net/jira/software/projects/PAR/boards/2/timeline?selectedIssue=PAR-2&atlOrigin=eyJpIjoiMGY2ZDM5MWM0NTUxNDQxOWI0MWZiZDI1YWY1YjdiODgiLCJwIjoiaiJ9
+
+imagenes referentes a la creacion y a las relacion de subtareas:
+
+![Imagen1 - Creaciones en JIRA](../images/JR1.png)
+![Imagen2 - Realciones en JIRA](../images/JR2.png)
