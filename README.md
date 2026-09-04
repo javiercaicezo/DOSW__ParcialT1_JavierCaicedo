@@ -74,3 +74,27 @@ imagenes referentes a la creacion y a las relacion de subtareas:
 
 ![Imagen1 - Creaciones en JIRA](../images/JR1.png)
 ![Imagen2 - Realciones en JIRA](../images/JR2.png)
+
+# 4. Patrones de diseño 
+
+Identifique 2 patrones de diseño aplicables a este caso de estudio (por ejemplo, uno para 
+la estrategia de selección de preferencia y otro para aislar la interoperabilidad con los 
+sistemas externos). Especifique: 
+• Nombre del patrón. 
+• Tipo de patrón (creacional, estructural o de comportamiento). 
+• Justificación de la decisión.  
+Realice un Diagrama de Clases que permita entender su solución y mencione 
+explícitamente qué principios SOLID está aplicando y por qué. (Añada el diagrama y la 
+justificación al README).
+
+### 4.1 Patrón COMMAND
+
+| Nombre | Command |
+|------|-------------|
+| **TIPO** | Comportamiento |
+| **JUSTIFCACION** | Se analiza la implementacion de este patrón precisamente en el requisito funcional obligatorio, buscando como fin que dependiendo del ingreso que se le da a la solicitud que puede ser de 3 tipos:FASTEST_AVAILABLE / EXPERT_FIRST / PEER_TUTORING , se analiza que dependiendo del requerimiento que solicite el estudiante, se realiza un proceso diferente a pesar de que la acción sigue siendo solicitar una tutoria, de este modo se agiliza y se generaliza una solicitud para luego ser implementado en forma de interfaz por las solicitudes especificas, de este modo manejan las mismas operaciones generales, pudiendo tener cada una un filtro y una respuesta diferente de acuerdo a su linea de busqueda. |
+
+| Nombre | Adapter |
+|------|-------------|
+| **TIPO** | Creacional |
+| **JUSTIFCACION** | Se analiza la implementacion de este patrón devido a que se debe hacer uso de el formato JSON para transportar informacion desde enlace, esto significa que estamos recibiendo un tipo de archivo que debe ser adaptado para su debida validacion y su debido filtrado dentro de la implementacion final para tener un flujo de informacion manejable dentro del servicio y no ser dependientes de otro 3er servicio o aplicacion para poder realizar la conversion de información. |
