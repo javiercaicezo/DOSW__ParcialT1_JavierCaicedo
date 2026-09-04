@@ -98,3 +98,6 @@ justificación al README).
 |------|-------------|
 | **TIPO** | Creacional |
 | **JUSTIFCACION** | Se analiza la implementacion de este patrón devido a que se debe hacer uso de el formato JSON para transportar informacion desde enlace, esto significa que estamos recibiendo un tipo de archivo que debe ser adaptado para su debida validacion y su debido filtrado dentro de la implementacion final para tener un flujo de informacion manejable dentro del servicio y no ser dependientes de otro 3er servicio o aplicacion para poder realizar la conversion de información. |
+
+Diagrama de clases:
+![Imagen2 - Diagrama de clases](../uml/DC-Base.png)
