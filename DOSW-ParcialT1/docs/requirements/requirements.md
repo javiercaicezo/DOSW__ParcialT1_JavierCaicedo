@@ -1,5 +1,47 @@
-##Requerimientos Funcionales:
-  - 
-##Requerimientos no funcionales:
+# Requerimientos FUNCIONALES del Sistema
+  ### 2.1 Requerimiento Funcional 1
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | RF-01 |
+| **Nombre del requerimiento** | Consulta de horarios de tutorias |
+| **Descripción** | El sistema permite a un usuario consultar los horarios de tutorias con los diferentes Tutores disponibles, siempre y cuando el usuario se encuentra habilitado para acceder a la información de la materia. |
+| **Precondiciones** | Para que el sistema cumpla con este requerimiento, TutoECI debe tener previamente un autenticado al usuario con credenciales válidas (nombre de usuario y contraseña). |
+| **Actor** | Estudiante, Tutor |
+| **Flujo principal** | 1. El Estudiante/Tutor inicia sesión en el sistema con sus credenciales.<br>2. El etudiante/tutor selecciona la opción de consultar tutorias.<br>3. El sistema valida si el usuario tiene acceso a la materia consultada(en este caso se da acceso)<br>4. El estudiante/tutor elige la franja horaria o tutor deseado.<br>5. El sistema solicita los datos necesarios según la acción (fechas, tutor, prioridad, etc).<br>6. El sistema ejecuta la acción y muestra la informacion general de las tutorias según filtración. |
+| **Diagrama de caso de uso** | ![Diagrama de caso de uso - Consulta horarios](../uml/RF1-CU.png) |
+| **Poscondiciones** | Se espera como resultado que se la muestre al usuario la informacion solicitada según sus intereses. |
+| **Historia de usuario** | COMO estudiante QUIERO solicitar las franjas horarias de las tutorias de las materias que estoy viendo PARA PODER realizar la solicitud de la tutoria de acuerdo a mis intereses y necesidades |
+
+  ### 2.2 Requerimiento Funcional 2
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | RF-02 |
+| **Nombre del requerimiento** | Notificar al usuario, cumpliendo con el formato indicado |
+| **Descripción** | El sistema notifica al usuario en caso de que su reserva haya sido realizada de manera correcta. |
+| **Precondiciones** | 1. Para que el sistema cumpla con este requerimiento, TutoECI debe tener previamente un autenticado al usuario con credenciales válidas (nombre de usuario y contraseña). 2. El usuario debió haber creado una solicitud de reserva hacia esa materia. |
+| **Actor** | Estudiante |
+| **Flujo principal** | 1. El Estudiante inicia sesión en el sistema con sus credenciales.<br>2. El etudiante selecciona la opción de solicitar tutorias.<br>3. El sistema valida si el usuario tiene acceso a la materia consultada(en este caso se da acceso)<br>4. El estudiante elige la franja horaria o tutor deseado.<br>5. El sistema solicita los datos necesarios según la acción (fechas, tutor, prioridad, etc).<br>6. El sistema ejecuta la acción y realiza la reserva.<br>5. Se envía la notificacion en el formato: correo@mail.escuelaing.edu.co|Mensaje_de_confirmacion. |
+| **Diagrama de caso de uso** | ![Diagrama de caso de uso - Notificacion de confirmacion](../uml/RF2-CU.png) |
+| **Poscondiciones** | Se espera como resultado que quede en la bandeja de notificaciones el respectivo mensaje |
+| **Historia de usuario** | COMO estudiante QUIERO tener la notificacion de confirmacion de la reserva realizada PARA PODER tener la certeza de asistir a la tutoria de manera adecuada. |
+
+
+  ### 2.3 Requerimiento Funcional 3
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | RF-02 |
+| **Nombre del requerimiento** | Permitir solicitar tutorias de maneras diferentes |
+| **Descripción** | El sistema permite al usuario solicitar tutorias de maneras diferentes dependiendo de sus requerimientos y prioridades(FASTEST_AVAILABLE / EXPERT_FIRST / PEER_TUTORING) |
+| **Precondiciones** | 1. Para que el sistema cumpla con este requerimiento, TutoECI debe tener previamente un autenticado al usuario con credenciales válidas (nombre de usuario y contraseña). |
+| **Actor** | Estudiante |
+| **Flujo principal** | 1. El Estudiante inicia sesión en el sistema con sus credenciales.<br>2. El etudiante selecciona la opción de solicitar tutorias.<br>3. El sistema valida si el usuario tiene acceso a la materia consultada(en este caso se da acceso)<br>4. El estudiante elige la opcion de filtrado de solicitud deseada(FASTEST_AVAILABLE / EXPERT_FIRST / PEER_TUTORING).<br>5. El sistema solicita los datos necesarios según la acción (fechas, tutor, prioridad, etc).<br>6. El sistema ejecuta la acción y realiza la reserva de acuerdo a la opcion escogida. |
+| **Poscondiciones** | Se espera como resultado que quede debidamente reservado en la base de datos la franja horaria correspondiente a la materia y al tutor. |
+| **Historia de usuario** | COMO estudiante QUIERO solicitar de diferentes maneras la opción de tutoria dependiendo de mis prioridades y requerimientos PARA PODER tener una mejor tutoria frente a mis necesidades en la materia solicitada. |
+
+
+# Requerimientos no funcionales:
   - La pagina debe respetar la identidad institucional incluyento la paleta de colores oficial del programa
   - Se debe emplear una tipografia clara con unos estandares minimos al contraste
